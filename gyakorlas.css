@@ -1,0 +1,111 @@
+/*csslint order-alphabetical: false, box-model: false*/
+
+
+/*css specificity
+.main-menu-item{
+    color black
+
+}
+
+.mainmenu.main-menu-item{
+    color:red;
+    
+}*/
+
+
+
+main{
+    background-color: lightblue;
+/*    tudjuk h padding növeli az eleme szélességét*/
+    padding: 30px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    height: 25px;
+}
+
+
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    
+    }
+.main-menu-container{
+   text-align: center;
+    background-color: lightblue;
+    margin-bottom: 40px;
+}
+
+.main-menu{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-menu-item{
+    display: inline-block;
+    font-size: 17px;
+    padding: 20px 10px;
+    background-color: blue;
+    color: white;
+    transition: background-color .5s ease-in-out;
+    position: relative;
+}
+
+.main-menu-item:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.main-menu-item:hover {
+    background-color: red;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    
+}    
+
+
+.submenu-item{
+    padding: 20px 10px;
+    background-color: blue;
+}
+
+.gombos-menu{
+    display: none;
+}
+
+.menu-checkbox-input{
+    display: none;
+}
+
+.menu-checkbox-input:checked ~ .gombos-menu {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
